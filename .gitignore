@@ -1,0 +1,23 @@
+# node_modules
+node_modules/
+
+# logs
+logs/
+*.log
+
+# environment variables
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# test coverage
+coverage/
+
+# build files
+dist/
+build/
+
+# Jest cache
+jest-cache/
