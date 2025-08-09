@@ -20,7 +20,7 @@ export function placeRandomShips(board) {
       const horizontal = Math.random() < 0.5;
       const row = randomInt(board.size);
       const col = randomInt(board.size);
-      
+
       if (board.canPlaceShip(spec.length, row, col, horizontal)) {
         const ship = new Ship(spec.length, spec.name);
         board.placeShip(ship, row, col, horizontal);
@@ -28,4 +28,12 @@ export function placeRandomShips(board) {
       }
     }
   }
+}
+
+export function placeSelectedShip(board, ship, row, col, horizontal) {
+  if (board.canPlaceShip(ship.length, row, col, horizontal)) {
+    board.placeShip(ship, row, col, horizontal);
+    return true;
+  }
+  return false;
 }

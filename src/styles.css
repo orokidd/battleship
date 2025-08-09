@@ -183,6 +183,17 @@ header h2 {
   justify-content: center;
 }
 
+.cell.preview {
+  background: linear-gradient(145deg, #81c784, #aed581);
+  border-color: #388e3c;
+  opacity: 0.7;
+}
+.cell.preview.invalid {
+  background: linear-gradient(145deg, #e57373, #ffcdd2);
+  border-color: #c62828;
+  opacity: 0.7;
+}
+
 /* Animation for explosion effect */
 @keyframes explosion {
   0% {
