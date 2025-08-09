@@ -207,6 +207,15 @@ function createShipSelectionButtons() {
   });
   buttonContainer.appendChild(randomButton);
 
+  const rotateButton = document.createElement('button');
+  rotateButton.className = 'ship-button';
+  rotateButton.textContent = 'Rotate Ship';
+  rotateButton.addEventListener('click', () => {
+    shipOrientation = !shipOrientation;
+    messageElement.textContent = `Ship orientation: ${shipOrientation ? "Horizontal" : "Vertical"}`;
+  });
+  buttonContainer.appendChild(rotateButton);
+
   const finishButton = document.createElement('button');
   finishButton.className = 'finish-placement-btn';
   finishButton.id = 'finishPlacementBtn';
