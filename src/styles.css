@@ -53,10 +53,6 @@ header h2 {
   transform: translateY(0);
 }
 
-#toggleShipsBtn {
-  background: linear-gradient(145deg, #2196F3, #1976D2);
-}
-
 .boards {
   display: flex;
   gap: 40px;
@@ -192,6 +188,89 @@ header h2 {
   background: linear-gradient(145deg, #e57373, #ffcdd2);
   border-color: #c62828;
   opacity: 0.7;
+}
+
+/* Ship Selection Styles */
+.ship-selector {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.ship-selector h3 {
+  margin: 0 0 15px 0;
+  text-align: center;
+  color: #333;
+}
+
+.ship-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.ship-button {
+  padding: 10px 15px;
+  border: 2px solid #666;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.ship-button:hover:not(:disabled) {
+  background-color: #e0e0e0;
+  border-color: #333;
+}
+
+.ship-button.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.ship-button.placed {
+  background-color: #28a745;
+  color: white;
+  border-color: #1e7e34;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.finish-placement-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.finish-placement-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .ship-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ship-button {
+    width: 200px;
+  }
 }
 
 /* Animation for explosion effect */
