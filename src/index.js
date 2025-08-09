@@ -1,15 +1,5 @@
-class Ship {
-    constructor(length) {
-        this.length = length;
-        this.hitCount = 0;
-        this.sunk = false;
-    }
+import { init } from "./script/ui";
+import "./styles.css";
 
-    hit() {
-        this.hitCount++
-    }
 
-    isSunk() {
-        return this.hitCount >= this.length
-    }
-}
+init();

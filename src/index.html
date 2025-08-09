@@ -8,7 +8,29 @@
 </head>
 
 <body>
+    <div>
+        <header>
+            <h2>Battleship — JavaScript</h2>
+            <div class="controls">
+                <button id="restartBtn">Restart</button>
+                <button id="toggleShipsBtn">Toggle My Ships</button>
+            </div>
+        </header>
 
+        <div class="boards">
+            <div class="board-container">
+                <label>Your board</label>
+                <div id="playerBoard" class="grid"></div>
+            </div>
+
+            <div class="board-container">
+                <label>Enemy board</label>
+                <div id="enemyBoard" class="grid"></div>
+            </div>
+        </div>
+
+        <div class="message" id="message"></div>
+    </div>
 </body>
 
 </html>
