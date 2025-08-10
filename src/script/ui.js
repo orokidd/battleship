@@ -27,7 +27,7 @@ export function init() {
   // All ship placement set to false
   shipPlacementStatus = SHIP_SPECS.map(() => false);
   
-  messageElement.textContent = "Select a ship to place, then click on the board. Press R to rotate.";
+  messageElement.textContent = "Select a ship to place, then click on the board.";
 
   placeRandomShips(enemyBoard);
   createShipSelectionButtons();
@@ -398,7 +398,7 @@ document.addEventListener("keydown", (e) => {
   if (placingShips && (e.key === "r" || e.key === "R")) {
     shipOrientation = !shipOrientation;
     if (currentShipIndex < SHIP_SPECS.length && !shipPlacementStatus[currentShipIndex]) {
-      messageElement.textContent = `Orientation: ${shipOrientation ? "Horizontal" : "Vertical"}. Place your ${SHIP_SPECS[currentShipIndex].name} (${SHIP_SPECS[currentShipIndex].length} cells).`;
+      messageElement.textContent = `Ship orientation: ${shipOrientation ? "Horizontal" : "Vertical"}`;;
     }
   }
 });
