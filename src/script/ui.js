@@ -1,4 +1,4 @@
-import { SHIP_SPECS, placeRandomShips, randomInt, placeSelectedShip } from "./helpers.js";
+import { SHIP_SPECS, placeRandomShips, randomInt } from "./helpers.js";
 import { Board } from "./gameboard.js";
 import { Ship } from "./ship.js";
 
@@ -177,7 +177,6 @@ function createShipSelectionButtons() {
 
   const shipSelector = document.createElement('div');
   shipSelector.className = 'ship-selector';
-  shipSelector.innerHTML = '<h3>Select Ship to Place:</h3>';
 
   const buttonContainer = document.createElement('div');
   buttonContainer.className = 'ship-buttons';

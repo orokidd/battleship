@@ -1,6 +1,3 @@
-import { Ship } from "./ship.js";
-import { randomInt, placeRandomShips } from "./helpers.js";
-
 export class Board {
   constructor(size = 10) {
     this.size = size;

@@ -29,11 +29,3 @@ export function placeRandomShips(board) {
     }
   }
 }
-
-export function placeSelectedShip(board, ship, row, col, horizontal) {
-  if (board.canPlaceShip(ship.length, row, col, horizontal)) {
-    board.placeShip(ship, row, col, horizontal);
-    return true;
-  }
-  return false;
-}
