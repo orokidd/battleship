@@ -143,7 +143,7 @@ header {
 .message {
   text-align: center;
   font-size: 1.2rem;
-  /* font-weight: 600; */
+  font-weight: 600;
   background: rgb(255, 255, 255);
   padding: 15px 30px;
   border-radius: 14px;
